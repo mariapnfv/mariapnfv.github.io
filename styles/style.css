@@ -1,0 +1,63 @@
+.page {
+  background-image: url("../images/background.jpg");
+    background-size: cover;
+  background-attachment: fixed;
+ text-align: center;
+ padding-top: 5vh;
+ font-family: Roboto, sans-serif;
+}
+
+.header-incom {
+  min-height: 10px;
+  padding-bottom: 25px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+
+}
+
+.streamwood,
+.crm {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+
+.streamwood-logo,
+.crm-logo {
+  display: block;
+  height: clamp(30px, 12.65px + 4.63vw, 80px);
+}
+
+.streamwood-desc,
+.crm-desc {
+  
+  display: inline-block;
+  color: #fff;
+  font-size: clamp(1.5rem, 0.6549rem + 4.2254vw, 4.5rem);
+  align-self: start;
+
+   text-shadow: 0 0 5px #F8D221;
+   animation: glow 1.5s 3 alternate;
+}
+.crm-desc {
+  text-shadow: 0 0 5px #8127BF;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #F8D221;
+    }
+    100% {
+        text-shadow: 0 0 10px #8127BF;
+  }
+
+}
